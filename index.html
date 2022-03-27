@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <form action="salvar.html" method="GET">
+        <fieldset>
+            <legend>Dados do usuário</legend>
+
+            <label>Nome</label>
+            <input name="nomme" type="text" placeholder="Digite seu nome">
+
+            <br><br>
+
+            <label>E-mail</label>
+            <input name="email" type="email" placeholder="digite seu e-mail">
+
+            <br><br>
+
+            <label>Senha</label>
+            <input name="senha" type="password" placeholder="Digite sua senha">
+
+            <br><br>
+
+            <label>Escolha a cor</label>
+            <input type="color">
+
+            <br><br>
+
+            <label for="">Sexo</label>
+            <input name="sexo" type="radio" value="Masculino"><label>Masculino</label>
+            <input name="sexo" type="radio" value="Feminino"><label>Feminino</label>
+            <input name="sexo" type="radio" value="Prefiro não informar"><label>Prefironão informar</label>
+            
+            <br><br>
+
+            <label>Habilidades</label>
+            <br><br>
+            <input name="habilidade" type="checkbox" value="html" id="html"><label>HTML</label>
+            <br>
+            <input name="habilidade" type="checkbox" value="css" id="css"><label>CSS</label>
+            <br>
+            <input name="habilidade" type="checkbox" value="javascript" id="javascript"><label>JAVASCRIPT</label>
+
+            <br><br>
+
+            <label>Cidade</label>
+            <br>
+            <select name="cidade">
+                <option selected value="">----Selecione----</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+            </select>
+
+            <br><br>
+
+            <label>Carro</label>
+            <br>
+            <select>
+                <optgroup label="Honda">
+                    <option value="Civic">Civic</option>
+                </optgroup>
+                <optgroup label="GM">
+                    <option value="Celta">Celta</option>
+                </optgroup>
+                <optgroup label="Fiat">
+                    <option value="Uno">Uno</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <label>Digite sua fruta preferida</label>
+            <input list="listafrutas" type="text" name="frutas" placeholder="Digite a fruta">
+
+            <datalist id="listafrutas">
+                <option value="Abacate"></option>
+                <option value="Acerola"></option>
+                <option value="Açai"></option>
+                <option value="Abacaxi"></option>
+            </datalist>
+
+            <br><br>
+
+            <label>Digite uma mensagem</label>
+            <br>
+            <textarea name="mensagem" cols="50" rows="10"></textarea>
+
+            <br><br>
+
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
